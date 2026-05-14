@@ -1,0 +1,30 @@
+paths:
+  # vitadb cases.csv所在路径
+  cases_csv_path: '/home/share/datasets/ioh/VitalDB/vitaldb_oridataset/webapi_dataset/cases.csv'
+  # vitaldb trks.csv所在路径
+  trks_csv_path: '/home/share/datasets/ioh/VitalDB/vitaldb_oridataset/webapi_dataset/trks.csv'
+  # vitaldb labs.csv所在路径
+  labs_csv_path: '/home/share/datasets/ioh/VitalDB/vitaldb_oridataset/webapi_dataset/labs.csv'
+  # vitaldb tids文件夹所在路径
+  tids_folder_path: '/home/share/datasets/ioh/VitalDB/vitaldb_oridataset/webapi_dataset/tids'
+
+  # 数据集所在路径。训练集、验证集、测试集先全部放到一个文件中
+  ioh_dataset_csv_path: '/home/share/datasets/ioh/VitalDB/processed/timeseries_by_caseids_prerisk/ANS2E_IOH'
+
+
+data_analysis_paths:
+  analyze_sampling_points_within1min_log_path: '/home/share/ioh/..?./logs/analyze_sampling_points_within1min_log.txt'
+
+
+# 选择需要提取的tname
+tname_selection:
+  Solar8000/ART_DBP: True # 舒张压
+  Solar8000/ART_MBP: True # 平均动脉压
+  Solar8000/ART_SBP: True # 收缩压
+  Solar8000/ETCO2: True # 呼气末二氧化碳
+  Solar8000/VENT_MAWP: True # 平均气道压
+  Solar8000/HR: True # 心率
+
+
+parameters:
+  STIME: 2  # 抽样周期，单位为S
